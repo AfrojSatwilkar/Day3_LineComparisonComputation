@@ -13,10 +13,13 @@ public class LineComparisonProgram {
         double distance2 = Math.sqrt((X4-X3)*(X4-X3) + (Y4-Y3)*(Y4-Y3));
         System.out.println("Distance between "+"("+X3+","+Y3+"),"+"("+X4+","+Y4+") is "+distance2);
 
-        boolean check = distance1==distance2;
-        if (check)
+
+        if (distance1==distance2)
             System.out.println("Both Lines are Equal");
+        else if (distance1<distance2)
+            System.out.println("Distance1 is smaller than Distance2");
         else
-            System.out.println("Both lines are not Equal");
+            System.out.println("Distance2 is Smaller than Distance1");
+
     }
 }
